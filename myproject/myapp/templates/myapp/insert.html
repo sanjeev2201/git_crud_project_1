@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #reg{
+            background-color:purple;
+            color:silver;
+        }
+        #bt{
+            color: blue;
+        }
+    </style>
+    <title>home page</title>
+</head>
+<body>
+    <h2 style="text-align:center" id="reg">Welcome to Vn2 Solution Registration page </h2>
+    <form action="" method="post" novalidate>{% csrf_token  %}
+        {{form.as_p}}
+        <input id="bt" type="submit" value="Submit">
+        
+    </form>
+    
+</body>
+</html>
